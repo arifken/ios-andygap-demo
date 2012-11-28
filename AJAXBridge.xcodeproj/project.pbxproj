@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3BC801124DC9960B73434B9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BC83498628BCE97FBD723D /* AddressBook.framework */; };
+		D3BC803E4DEBC47EC95A2EDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC85367816B4ACBF3688E6 /* main.m */; };
+		D3BC825452AC62C187491CE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BC8036E00C99BDC10C53EA /* UIKit.framework */; };
+		D3BC8283AB608C1F967F79EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BC8D5A57D03EB44AEC7EC6 /* CoreGraphics.framework */; };
+		D3BC8380FABF2112C49EB9C9 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC87BBE9ADEF1BA435B40B /* NSObject+SBJson.m */; };
+		D3BC84A4044A1458824A837F /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC899F7C383B516A9F0DA7 /* SBJsonTokeniser.m */; };
+		D3BC84E4CDB8813FCD67CD0F /* NativeAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC8A68BBA56B9C8CFEF290 /* NativeAction.m */; };
+		D3BC8509BF2D3484381E93AD /* www in Resources */ = {isa = PBXBuildFile; fileRef = D3BC839433143485D5900966 /* www */; };
+		D3BC8559089FE948E2C56F35 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC8EA1879C3A94EA812B20 /* GTMNSDictionary+URLArguments.m */; };
+		D3BC86420EF915564F362DC6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D3BC8BE92BE01DD07C855628 /* Default.png */; };
+		D3BC8685529CBE6F107D8370 /* JavascriptBridgeURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC86A05D0B81D560400B43 /* JavascriptBridgeURLCache.m */; };
+		D3BC8688867F7CCFCC613019 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC8F5D9FBC15CBB99B4DEE /* SBJsonStreamWriterState.m */; };
+		D3BC86E948C7448EF258C210 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3BC8DB8F63BEC0B72F8341E /* Default@2x.png */; };
+		D3BC870B2CB1243CB5139257 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC87108DF964398387775D /* SBJsonStreamParserAdapter.m */; };
+		D3BC88C800F7FFF6EC95C6E7 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC83EE72DA4DDB020D05AD /* GTMNSString+URLArguments.m */; };
+		D3BC89935A64F0F6A6467E5E /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC86470A9404FFB7FCF7B3 /* SBJsonStreamParserState.m */; };
+		D3BC89CECAAE7AEB2E071D8F /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC81410356FA55FD6EB609 /* SBJsonStreamParserAccumulator.m */; };
+		D3BC8A2E9E4D1D67A5A9A2BB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC8380321716D8DEB566F6 /* SBJsonWriter.m */; };
+		D3BC8A402B7B9DEDB58E238B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3BC83890A77D36C996D4641 /* Default-568h@2x.png */; };
+		D3BC8A481749AC5DDE75B7E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3BC8A307A5B6D52C117D91F /* InfoPlist.strings */; };
+		D3BC8A57A43AE45E7555A460 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC815ACE34E7BA4E84D4C7 /* SBJsonUTF8Stream.m */; };
+		D3BC8AE766F9E4473D3C076E /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC860EB44E1C3C99B210D1 /* SBJsonStreamWriterAccumulator.m */; };
+		D3BC8C28FEC59292783A2A98 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC8558DDF83D2CDEC60969 /* SBJsonStreamParser.m */; };
+		D3BC8CCC2410EC2D043090AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BC85373E078CA51AA3AD9D /* Foundation.framework */; };
+		D3BC8D8D5304606038FA470C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC80FBD80A7FCE18D97640 /* RootViewController.m */; };
+		D3BC8DC39AFA4DC8C02CE4C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC873886A9E6AABC306C04 /* AppDelegate.m */; };
+		D3BC8F1F8AFA169897FA5771 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC89BB16C8BB9502ADE49F /* SBJsonParser.m */; };
+		D3BC8FF68306156861EE672A /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BC89634DDAFE2D309629F9 /* SBJsonStreamWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3BC8036E00C99BDC10C53EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3BC80866310B0A1474F970D /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		D3BC80FBD80A7FCE18D97640 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D3BC812C5AC62938CA82B306 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		D3BC81410356FA55FD6EB609 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		D3BC815ACE34E7BA4E84D4C7 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		D3BC819BDA47AC28AAC6B5DA /* AJAXBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AJAXBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3BC81ED2ED8237F9F784E1F /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		D3BC83046D1C3BB7FA84D0B2 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		D3BC831E74F465C1E09597F4 /* AJAXBridge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AJAXBridge-Prefix.pch"; sourceTree = "<group>"; };
+		D3BC833AEBFF19B9A5717B6E /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		D3BC83498628BCE97FBD723D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D3BC8380321716D8DEB566F6 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		D3BC83890A77D36C996D4641 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D3BC839433143485D5900966 /* www */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		D3BC83EE72DA4DDB020D05AD /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		D3BC842F5CD6C438919EF5E5 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		D3BC843CEF112A32E9BBD94B /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		D3BC84480ED7C5AC83B972CA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3BC8472D28A198345EBFC00 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		D3BC84C1EFA8D40D82E2070D /* NativeAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAction.h; sourceTree = "<group>"; };
+		D3BC84D632CB04678935095F /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		D3BC85367816B4ACBF3688E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3BC85373E078CA51AA3AD9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3BC8558DDF83D2CDEC60969 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		D3BC8559A4F79B29AA0E81E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3BC860EB44E1C3C99B210D1 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		D3BC864438D7732A9BC000E3 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		D3BC86470A9404FFB7FCF7B3 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		D3BC86A05D0B81D560400B43 /* JavascriptBridgeURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavascriptBridgeURLCache.m; sourceTree = "<group>"; };
+		D3BC86A2783BF771576D4B56 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		D3BC86EE99189C5FAFCB2BD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3BC87108DF964398387775D /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		D3BC873886A9E6AABC306C04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D3BC87BBE9ADEF1BA435B40B /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		D3BC883BEA8995A6B9BA5169 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		D3BC89634DDAFE2D309629F9 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		D3BC899F7C383B516A9F0DA7 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		D3BC89BB16C8BB9502ADE49F /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		D3BC8A68BBA56B9C8CFEF290 /* NativeAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAction.m; sourceTree = "<group>"; };
+		D3BC8AABD8F1CD3C30A1173C /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		D3BC8AD6485ADB12C2A56500 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		D3BC8B1F8355D1BEBA8FC138 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		D3BC8B5A4DE5C35B77C09CA1 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D3BC8BE92BE01DD07C855628 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D3BC8C5B91140E08CEA7641F /* AJAXBridge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "AJAXBridge-Info.plist"; sourceTree = "<group>"; };
+		D3BC8D5A57D03EB44AEC7EC6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3BC8DB8F63BEC0B72F8341E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D3BC8EA1879C3A94EA812B20 /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
+		D3BC8F5D9FBC15CBB99B4DEE /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		D3BC8FA2E7F0D9EBD8A32404 /* JavascriptBridgeURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavascriptBridgeURLCache.h; sourceTree = "<group>"; };
+		D3BC8FD5DC664B48AE3C5FB2 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3BC80CCD66C297BF92B726B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3BC825452AC62C187491CE3 /* UIKit.framework in Frameworks */,
+				D3BC8CCC2410EC2D043090AC /* Foundation.framework in Frameworks */,
+				D3BC8283AB608C1F967F79EF /* CoreGraphics.framework in Frameworks */,
+				D3BC801124DC9960B73434B9 /* AddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3BC845EF5D75E94F2C34620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC8036E00C99BDC10C53EA /* UIKit.framework */,
+				D3BC85373E078CA51AA3AD9D /* Foundation.framework */,
+				D3BC8D5A57D03EB44AEC7EC6 /* CoreGraphics.framework */,
+				D3BC84480ED7C5AC83B972CA /* SenTestingKit.framework */,
+				D3BC83498628BCE97FBD723D /* AddressBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3BC88057B860EFA36423EAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC8C5B91140E08CEA7641F /* AJAXBridge-Info.plist */,
+				D3BC8A307A5B6D52C117D91F /* InfoPlist.strings */,
+				D3BC85367816B4ACBF3688E6 /* main.m */,
+				D3BC831E74F465C1E09597F4 /* AJAXBridge-Prefix.pch */,
+				D3BC8BE92BE01DD07C855628 /* Default.png */,
+				D3BC8DB8F63BEC0B72F8341E /* Default@2x.png */,
+				D3BC83890A77D36C996D4641 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3BC89AFA93C463A2E930AC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC819BDA47AC28AAC6B5DA /* AJAXBridge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3BC8B245F2188686C51F26D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC839433143485D5900966 /* www */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3BC8BA5BFE1B4B6B276D610 /* AJAXBridge */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC88057B860EFA36423EAF /* Supporting Files */,
+				D3BC8B245F2188686C51F26D /* Resources */,
+				D3BC8BEDDA331852AE5C8824 /* Classes */,
+				D3BC8DB09D5AC2942665E951 /* Libraries */,
+			);
+			path = AJAXBridge;
+			sourceTree = "<group>";
+		};
+		D3BC8BEDDA331852AE5C8824 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC8559A4F79B29AA0E81E8 /* AppDelegate.h */,
+				D3BC873886A9E6AABC306C04 /* AppDelegate.m */,
+				D3BC8FA2E7F0D9EBD8A32404 /* JavascriptBridgeURLCache.h */,
+				D3BC86A05D0B81D560400B43 /* JavascriptBridgeURLCache.m */,
+				D3BC84C1EFA8D40D82E2070D /* NativeAction.h */,
+				D3BC8A68BBA56B9C8CFEF290 /* NativeAction.m */,
+				D3BC8B5A4DE5C35B77C09CA1 /* RootViewController.h */,
+				D3BC80FBD80A7FCE18D97640 /* RootViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D3BC8C0241E7B21B64B245DC /* GTM */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC883BEA8995A6B9BA5169 /* GTMDefines.h */,
+				D3BC81ED2ED8237F9F784E1F /* GTMNSDictionary+URLArguments.h */,
+				D3BC8EA1879C3A94EA812B20 /* GTMNSDictionary+URLArguments.m */,
+				D3BC86A2783BF771576D4B56 /* GTMNSString+URLArguments.h */,
+				D3BC83EE72DA4DDB020D05AD /* GTMNSString+URLArguments.m */,
+			);
+			path = GTM;
+			sourceTree = "<group>";
+		};
+		D3BC8CDC3ACAC59EB8C0F1DE = {
+			isa = PBXGroup;
+			children = (
+				D3BC89AFA93C463A2E930AC6 /* Products */,
+				D3BC845EF5D75E94F2C34620 /* Frameworks */,
+				D3BC8BA5BFE1B4B6B276D610 /* AJAXBridge */,
+			);
+			sourceTree = "<group>";
+		};
+		D3BC8DB09D5AC2942665E951 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC8FDF5606E9BF7BE10495 /* JSON */,
+				D3BC8C0241E7B21B64B245DC /* GTM */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		D3BC8FDF5606E9BF7BE10495 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC864438D7732A9BC000E3 /* SBJsonWriter.h */,
+				D3BC8380321716D8DEB566F6 /* SBJsonWriter.m */,
+				D3BC83046D1C3BB7FA84D0B2 /* NSObject+SBJson.h */,
+				D3BC87BBE9ADEF1BA435B40B /* NSObject+SBJson.m */,
+				D3BC8B1F8355D1BEBA8FC138 /* SBJson.h */,
+				D3BC843CEF112A32E9BBD94B /* SBJsonParser.h */,
+				D3BC89BB16C8BB9502ADE49F /* SBJsonParser.m */,
+				D3BC833AEBFF19B9A5717B6E /* SBJsonStreamParser.h */,
+				D3BC8558DDF83D2CDEC60969 /* SBJsonStreamParser.m */,
+				D3BC80866310B0A1474F970D /* SBJsonStreamParserAccumulator.h */,
+				D3BC81410356FA55FD6EB609 /* SBJsonStreamParserAccumulator.m */,
+				D3BC8AABD8F1CD3C30A1173C /* SBJsonStreamParserAdapter.h */,
+				D3BC87108DF964398387775D /* SBJsonStreamParserAdapter.m */,
+				D3BC8AD6485ADB12C2A56500 /* SBJsonStreamParserState.h */,
+				D3BC86470A9404FFB7FCF7B3 /* SBJsonStreamParserState.m */,
+				D3BC812C5AC62938CA82B306 /* SBJsonStreamWriter.h */,
+				D3BC89634DDAFE2D309629F9 /* SBJsonStreamWriter.m */,
+				D3BC842F5CD6C438919EF5E5 /* SBJsonStreamWriterAccumulator.h */,
+				D3BC860EB44E1C3C99B210D1 /* SBJsonStreamWriterAccumulator.m */,
+				D3BC8472D28A198345EBFC00 /* SBJsonStreamWriterState.h */,
+				D3BC8F5D9FBC15CBB99B4DEE /* SBJsonStreamWriterState.m */,
+				D3BC84D632CB04678935095F /* SBJsonTokeniser.h */,
+				D3BC899F7C383B516A9F0DA7 /* SBJsonTokeniser.m */,
+				D3BC8FD5DC664B48AE3C5FB2 /* SBJsonUTF8Stream.h */,
+				D3BC815ACE34E7BA4E84D4C7 /* SBJsonUTF8Stream.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3BC81EBB4EF9056D2F4EF7C /* AJAXBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3BC8D9C1C59FD51DEEB1B7B /* Build configuration list for PBXNativeTarget "AJAXBridge" */;
+			buildPhases = (
+				D3BC8B635DD889CD4FF4536E /* Sources */,
+				D3BC80CCD66C297BF92B726B /* Frameworks */,
+				D3BC8CF560E93FE69F270405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AJAXBridge;
+			productName = AJAXBridge;
+			productReference = D3BC819BDA47AC28AAC6B5DA /* AJAXBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3BC809F7B95DD4DEA2134D4 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D3BC806D9301908D61F14D7F /* Build configuration list for PBXProject "AJAXBridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D3BC8CDC3ACAC59EB8C0F1DE;
+			productRefGroup = D3BC89AFA93C463A2E930AC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3BC81EBB4EF9056D2F4EF7C /* AJAXBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3BC8CF560E93FE69F270405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3BC8A481749AC5DDE75B7E3 /* InfoPlist.strings in Resources */,
+				D3BC86420EF915564F362DC6 /* Default.png in Resources */,
+				D3BC86E948C7448EF258C210 /* Default@2x.png in Resources */,
+				D3BC8A402B7B9DEDB58E238B /* Default-568h@2x.png in Resources */,
+				D3BC8509BF2D3484381E93AD /* www in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3BC8B635DD889CD4FF4536E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3BC803E4DEBC47EC95A2EDE /* main.m in Sources */,
+				D3BC8DC39AFA4DC8C02CE4C3 /* AppDelegate.m in Sources */,
+				D3BC8685529CBE6F107D8370 /* JavascriptBridgeURLCache.m in Sources */,
+				D3BC8D8D5304606038FA470C /* RootViewController.m in Sources */,
+				D3BC84E4CDB8813FCD67CD0F /* NativeAction.m in Sources */,
+				D3BC8559089FE948E2C56F35 /* GTMNSDictionary+URLArguments.m in Sources */,
+				D3BC88C800F7FFF6EC95C6E7 /* GTMNSString+URLArguments.m in Sources */,
+				D3BC8A2E9E4D1D67A5A9A2BB /* SBJsonWriter.m in Sources */,
+				D3BC8380FABF2112C49EB9C9 /* NSObject+SBJson.m in Sources */,
+				D3BC8F1F8AFA169897FA5771 /* SBJsonParser.m in Sources */,
+				D3BC8C28FEC59292783A2A98 /* SBJsonStreamParser.m in Sources */,
+				D3BC89CECAAE7AEB2E071D8F /* SBJsonStreamParserAccumulator.m in Sources */,
+				D3BC870B2CB1243CB5139257 /* SBJsonStreamParserAdapter.m in Sources */,
+				D3BC89935A64F0F6A6467E5E /* SBJsonStreamParserState.m in Sources */,
+				D3BC8FF68306156861EE672A /* SBJsonStreamWriter.m in Sources */,
+				D3BC8AE766F9E4473D3C076E /* SBJsonStreamWriterAccumulator.m in Sources */,
+				D3BC8688867F7CCFCC613019 /* SBJsonStreamWriterState.m in Sources */,
+				D3BC84A4044A1458824A837F /* SBJsonTokeniser.m in Sources */,
+				D3BC8A57A43AE45E7555A460 /* SBJsonUTF8Stream.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3BC8A307A5B6D52C117D91F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3BC86EE99189C5FAFCB2BD9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3BC876F48A3C5E6008FD51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AJAXBridge/AJAXBridge-Prefix.pch";
+				INFOPLIST_FILE = "AJAXBridge/AJAXBridge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D3BC8B6413DD2734CB26462E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3BC8DB73CBBCE05F62DAFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AJAXBridge/AJAXBridge-Prefix.pch";
+				INFOPLIST_FILE = "AJAXBridge/AJAXBridge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3BC8EB8CC8A7E3E0E720322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3BC806D9301908D61F14D7F /* Build configuration list for PBXProject "AJAXBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3BC8EB8CC8A7E3E0E720322 /* Release */,
+				D3BC8B6413DD2734CB26462E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3BC8D9C1C59FD51DEEB1B7B /* Build configuration list for PBXNativeTarget "AJAXBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3BC876F48A3C5E6008FD51F /* Release */,
+				D3BC8DB73CBBCE05F62DAFC1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3BC809F7B95DD4DEA2134D4 /* Project object */;
+}

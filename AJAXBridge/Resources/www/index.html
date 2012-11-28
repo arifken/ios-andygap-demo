@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style type="text/css">
+        body {
+            background: #222;
+            font-family: "HelveticaNeue", Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 8px;
+            color: white;
+            margin: 8px;
+            display: inline-block;
+            background: gray;
+            -webkit-border-radius: 8px;
+            font-family: Helvetica, sans-serif;
+        }
+
+        table {
+            width: 290px;
+            background: #444;
+            color: white;
+            margin: 8px;
+            -webkit-border-radius: 8px;
+        }
+
+        td {
+            padding: 8px
+        }
+    </style>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#btn_alert02").click(function () {
+                $.ajax("http://myApp.example.org/alert?title=Test%20from%20AJAX&message=this%20is%20a%20message%20from%20an%20AJAX%20request");
+            });
+
+            $("#btn_contacts").click(function () {
+                $.ajax("http://myApp.example.org/contacts").complete(function (data) {
+                    // get the resposne object from our request to native
+                    var responseObj = $.parseJSON(data.responseText);
+                    drawContactsTable(responseObj.contacts);
+                });
+            });
+        });
+
+        var drawContactsTable = function (contacts) {
+            var i, contactsTable, name, phone;
+            console.log(contacts);
+
+
+            // see if we already have the table
+            contactsTable = $('#contacts');
+            if (contactsTable.length == 0) {
+                contactsTable = $('<table id="contacts"></table>');
+                $('#btn_contacts').after(contactsTable);
+            }
+
+            contactsTable.empty();
+            contactsTable.append('<thead><tr><td><strong>Contacts</strong></td></tr></thead>');
+            for (var key in contacts) {
+                name = key;
+                phone = contacts[name];
+                contactsTable.append('<tr><td>' + name + '</td><td>' + phone + '</td></tr>')
+            }
+        };
+    </script>
+</head>
+
+<body>
+
+<a href="http://myApp.example.org/alert?title=test&message=this%20is%20a%20message">Native alert via HREF</a>
+<a id="btn_alert02" href="#">Native alert via jQuery.ajax</a>
+<a id="btn_contacts" href="#">get address book contacts</a>
+
+</body>
+</html>
